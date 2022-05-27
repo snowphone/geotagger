@@ -29,4 +29,4 @@ In this case, try
 
 ```bash
 docker build -t hub.sixtyfive.me/geotagger .
-```.
+```

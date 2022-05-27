@@ -12,7 +12,8 @@
 
 ------------------
 
-If you want to save your time by caching kml file, convert Records.json manually as below and pass it to `tag.sh`.
+If you want to save your time by caching kml file,
+convert Records.json manually as below and pass it to `tag.sh`.
 
 ```bash
 ./json_to_kml -f kml Records.json Records.kml
@@ -21,3 +22,11 @@ If you want to save your time by caching kml file, convert Records.json manually
 
 `json_to_kml` is forked from [here](https://github.com/Scarygami/location-history-json-converter).
 
+------------------
+
+You may need to build this docker image by yourself.
+In this case, try
+
+```bash
+docker build -t hub.sixtyfive.me/geotagger .
+```.

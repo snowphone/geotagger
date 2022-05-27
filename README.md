@@ -19,5 +19,5 @@ If you want to save your time by caching kml file, convert Records.json manually
 ./tag.sh Records.kml PATH_TO_IMAGE_FOLDER
 ```
 
-[Forked from](https://github.com/Scarygami/location-history-json-converter)
+`json_to_kml` is forked from [here](https://github.com/Scarygami/location-history-json-converter).
 

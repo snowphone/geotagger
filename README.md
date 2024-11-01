@@ -1,26 +1,20 @@
 # Geotagger
 
-**1. Download Google location history**
+**1. Download Google Timeline from your phone**
 
-[Google Takeout URL](https://takeout.google.com/settings/takeout/custom/location_history?pli=1)
+Navigate to: Settings -> Location -> Location services -> Timeline -> **Export Timeline data**
 
-**2. Geotag images**
-
-```bash
-./tag.sh Records.json PATH_TO_IMAGE_FOLDER
-```
-
-------------------
-
-If you want to save your time by caching kml file,
-convert Records.json manually as below and pass it to `tag.sh`.
+**2. Convert Timeline.json to kml**
 
 ```bash
-./json_to_kml -f kml Records.json Records.kml
-./tag.sh Records.kml PATH_TO_IMAGE_FOLDER
+./convert_to_kml.sh Timeline.json Timeline.kml
 ```
 
-`json_to_kml` is forked from [here](https://github.com/Scarygami/location-history-json-converter).
+**3. Embed location data to photos**
+
+```bash
+./tag.sh Timeline.kml PATH_TO_IMAGE_FOLDER
+```
 
 ------------------
 
